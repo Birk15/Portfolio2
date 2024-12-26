@@ -1,73 +1,172 @@
 header {
   width: 100%;
   background-color: rgb(195, 217, 239);
-  padding: 20px;
+  padding: 1.25rem 1.25rem; /* Verwendung von rem für bessere Skalierbarkeit */
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 255, 255);
-  padding: 20px 30px;
+  background-color: #fff;
+  padding: 1.25rem 2rem;
 }
+
 .logo img {
-  width: 60px;
+  width: 3.75rem; /* Umrechnung von 60px in rem */
 }
+
+.home-link {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbutton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  width: 1.25rem; /* Optional: Legt die Größe des Dropdown-Symbols fest */
+  transition: transform 0.3s ease;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: -1rem; /* Anpassung der Position */
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem; /* Umrechnung von 10px in rem */
+  height: 0;
+  overflow-y: hidden;
+  transition: height 0.3s ease, padding 0.3s ease;
+  background-color: rgb(195, 217, 239);
+  border-radius: 0.25rem; /* Umrechnung von 4px in rem */
+}
+
+.home-link:hover .dropdown,
+.home-link:focus-within .dropdown {
+  height: auto; /* Dropdown sichtbar machen */
+  padding: 1.25rem 0.625rem 0.625rem 0.625rem; /* Anpassung von Padding */
+}
+
+.down-item {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 0.375rem; /* Umrechnung von 8px/6px in rem */
+  font-size: 0.875rem; /* Umrechnung von 14px in rem */
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.down-item:hover {
+  background-color: rgb(143, 191, 240);
+  color: red;
+}
+
+.dropdown-icon {
+  transform: rotate(0deg); /* Dreht das Symbol beim Hover */
+}
+
+.home-link:hover .dropdown-icon,
+.home-link:focus-within .dropdown-icon {
+  transform: rotate(180deg); /* Rückdrehung beim Hover */
+}
+
 .links {
   display: flex;
-  gap: 60px;
+  gap: 3.75rem; /* Umrechnung von 60px in rem */
 }
+
 .link {
   text-decoration: none;
-  color: rgb(0, 26, 255);
-  font-size: 20px;
+  font-size: 1.5rem; /* Umrechnung von 24px in rem */
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
 }
-.link:hover {
-  text-decoration: underline;
-}
+
+.link:hover,
 .link:focus {
-  color: rgba(42, 105, 242, 0.712);
-  text-decoration: underline;
+  color: rgb(55, 55, 198);
 }
 
 .menu {
   display: none;
   z-index: 3;
 }
+
 .close {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 1.25rem; /* Umrechnung von 20px in rem */
+  right: 1.25rem; /* Umrechnung von 20px in rem */
 }
 
-@media (max-width: 910px) {
+@media (max-width: 1040px) {
   .links {
-    gap: 20px;
+    gap: 1.25rem; /* Umrechnung von 20px in rem */
   }
 }
-@media (max-width: 740px) {
+
+@media (max-width: 824px) {
   .menu {
     display: block;
+  }
+  .dropdown {
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: static;
   }
   .links {
     display: flex;
     flex-direction: column;
     position: fixed;
-    height: 100vh;
+    gap: 0;
+    height: 0;
     z-index: 2;
-    background: rgba(226, 237, 248, 0.862);
-    width: 300px;
+    background: rgba(226, 237, 248, 0.9);
+    width: 100vw;
     top: 0;
     right: 0;
-    gap: 10px;
-    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: -0.1875rem 0 0.625rem rgba(0, 0, 0, 0.5); /* Umrechnung von px in rem */
+    transition: height 0.3s ease-in;
+    overflow: hidden;
   }
+
+  .links.showLinks {
+    height: 100vh;
+    padding-top: 50px;
+  }
+
   .link {
     width: 100%;
-    padding: 20px;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;
   }
+
   .link:hover {
     background-color: rgba(148, 211, 238, 0.822);
     text-decoration: none;
+    transform: translateY(0);
   }
+
+  .home-link:hover .dropdown,
+  .home-link:focus-within .dropdown {
+    height: auto; /* Dropdown sichtbar machen auf mobilen Geräten */
+    padding: 1rem;
+  }
+}
+
+.up-img {
+  position: fixed;
+  bottom: 1rem; /* Umrechnung von 15px in rem */
+  right: 1rem; /* Umrechnung von 15px in rem */
+  z-index: 10;
 }

@@ -1,0 +1,19 @@
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  height: 100vh;
+}
+.headline {
+  display: flex;
+  gap: 10px;
+}
+.headline img:hover {
+  scale: 1.1;
+}
+.loc {
+  width: 100%;
+  height: 60vh;
+}

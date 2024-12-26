@@ -1,0 +1,32 @@
+.paralax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/Haarschnitt.jpg");
+  background-size: cover; /* Hintergrundbild wird immer den Container abdecken */
+  background-attachment: fixed;
+  background-position: center; /* Anfangsposition des Hintergrunds */
+  min-height: 80vh;
+  width: 100vw;
+  background-color: #f00; /* Fallback */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: white;
+}
+
+.weekdays {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.weekday {
+  display: flex;
+  gap: 10px;
+  font-size: larger;
+  justify-content: center;
+  transition: 0.3s;
+}
+.weekday:hover {
+  scale: 1.08;
+}

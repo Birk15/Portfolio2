@@ -5,15 +5,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "deploy": "npm run build",
-    "predeploy": "gh-pages -d dist",
-    "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "framer-motion": "^11.15.0",
     "react": "^18.3.1",
+    "react-bootstrap": "^2.10.7",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.2",
     "react-scroll": "^1.9.0"

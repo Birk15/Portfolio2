@@ -1,0 +1,11 @@
+.datasecurity {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 800px;
+}
+.datasecurity p {
+  font-size: smaller;
+}

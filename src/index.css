@@ -2,4 +2,19 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+:root {
+  --Fcolor: linear-gradient(30deg, rgb(0, 55, 255), rgb(72, 248, 248));
+}
+
+.fontstyle {
+  background: var(--Fcolor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

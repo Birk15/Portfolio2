@@ -1,0 +1,85 @@
+.contact {
+  height: 110vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding for better spacing */
+  box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+}
+
+.contact h1 {
+  margin-bottom: 20px; /* Added spacing below the title */
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Reduced gap for better layout */
+  width: 100%; /* Adjusted to be more responsive */
+  max-width: 600px; /* Added max-width for better readability */
+  background-color: #f9f9f9; /* Added background for visual distinction */
+  padding: 20px; /* Added padding for better spacing */
+  border-radius: 10px; /* Added rounding for better aesthetics */
+  position: relative;
+}
+.contact form::after {
+  content: "";
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  position: absolute;
+  background-color: black;
+  z-index: -1;
+  border-radius: inherit;
+  filter: blur(10px);
+  transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+}
+.contact form:hover::after {
+  width: 101%;
+  height: 101%;
+  top: -0.5%;
+  left: -0.5%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+  border-radius: 5px;
+  padding: 10px; /* Increased padding for better usability */
+  border: 1px solid #ccc; /* Adjusted border for subtle appearance */
+  font-size: 16px; /* Added font size for readability */
+  width: 100%; /* Ensures inputs span full width of container */
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  border: 2px solid rgb(17, 17, 135);
+  outline: none; /* Removed default outline for cleaner look */
+}
+
+.contact form button {
+  background-color: rgb(17, 17, 135);
+  color: whitesmoke;
+  font-size: 18px; /* Adjusted font size for consistency */
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px; /* Adjusted padding for proportional size */
+  width: fit-content;
+  cursor: pointer; /* Added cursor pointer for better UX */
+  transition: transform 0.3s; /* Corrected transition property */
+}
+
+.contact form button:hover {
+  transform: scale(1.1); /* Fixed hover effect */
+}
+
+.contact form button:active {
+  background-color: rgb(66, 66, 156);
+}

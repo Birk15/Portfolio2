@@ -1,0 +1,16 @@
+.impressum {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 40px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
