@@ -1,6 +1,6 @@
-export const HOME_ROUTE = "/Portfolio2/";
-export const ABOUT_ROUTE = "/Portfolio2/about";
-export const OFFERS_ROUTE = "/Portfolio2/offers";
-export const CONTACT_ROUTE = "/Portfolio2/contact";
-export const IMPRESSUM_ROUTE = "/Portfolio2/impressum";
-export const DATASECURITY_ROUTE = "/Portfolio2/datasecurity";
+export const HOME_ROUTE = "/";
+export const ABOUT_ROUTE = "/about";
+export const OFFERS_ROUTE = "/offers";
+export const CONTACT_ROUTE = "/contact";
+export const IMPRESSUM_ROUTE = "/impressum";
+export const DATASECURITY_ROUTE = "/datasecurity";
