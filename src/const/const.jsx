@@ -1,4 +1,4 @@
-export const HOME_ROUTE = "/";
+export const HOME_ROUTE = "/Portfolio2/";
 export const ABOUT_ROUTE = "/about";
 export const OFFERS_ROUTE = "/offers";
 export const CONTACT_ROUTE = "/contact";
