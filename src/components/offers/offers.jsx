@@ -75,7 +75,7 @@ const Offers = () => {
                 src={offer.img}
                 alt={Offers.title}
               />
-              <Card.Body>
+              <Card.Body className="cardbody">
                 <Card.Title>{offer.title}</Card.Title>
                 {showDesc[offer.id] && <Card.Text>{offer.desc}</Card.Text>}
                 <Button onClick={() => handleDesc(offer.id)} variant="primary">
