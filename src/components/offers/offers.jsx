@@ -68,7 +68,7 @@ const Offers = () => {
       <Row>
         {offers.map((offer) => (
           <Col key={offer.id}>
-            <Card style={{ marginBottom: 50, minWidth: 300, height: 400 }}>
+            <Card className="card" style={{ marginBottom: 50 }}>
               <Card.Img
                 className="img"
                 variant="top"
