@@ -67,7 +67,7 @@ const Offers = () => {
       <h1 className="fontstyle">Offers</h1>
       <Row>
         {offers.map((offer) => (
-          <Col key={offer.id} md={3} sm={6}>
+          <Col key={offer.id}>
             <Card style={{ marginBottom: 50 }}>
               <Card.Img
                 className="img"
