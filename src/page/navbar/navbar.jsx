@@ -34,7 +34,7 @@ const Navbar = () => {
               <ScrollLink
                 className="down-item"
                 to="opening-hours"
-                smooth={easeInOutQuad}
+                smooth={true}
                 duration={1000}
               >
                 Opening Hours
@@ -42,7 +42,7 @@ const Navbar = () => {
               <ScrollLink
                 className="down-item"
                 to="location"
-                smooth={easeInOutQuad}
+                smooth={true}
                 duration={1000}
               >
                 Location
