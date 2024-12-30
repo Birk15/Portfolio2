@@ -7,11 +7,12 @@
   margin-top: 40px;
 }
 .img {
-  min-height: 200px;
+  height: 200px;
+  width: 260px;
   max-width: 98vw;
   object-fit: cover;
   transition: filter 0.3s;
 }
-.img:hover {
-  filter: grayscale(100%);
+.card:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
